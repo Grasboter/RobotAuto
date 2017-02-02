@@ -278,15 +278,15 @@ def isObstakel(lokaleHoeDichtBij):
 #---------------------------------------------------------
 
 try: 
-	while isObstakel < 11: 
+	while isObstakel(lokaleHoeDichtBij) < 11: 
 		print "kleiner dan 11 naar voren"
 		rijVooruit()
 
-	while isObstakel <= 4:
+	while isObstakel(lokaleHoeDichtBij) <= 4:
 		print "kleiner dan 4. motor uit."
 		motorsUit()
 		
-	while isObstakel >= 11:
+	while isObstakel(lokaleHoeDichtBij) >= 11:
 		print "groter dan 11. Nu snel naar links."
 		Links()
 		time.sleep(0.2)
